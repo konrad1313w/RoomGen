@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projektowanie Pokoju</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Projektowanie Pokoju</h1>
+    <form id="roomForm">
+      <label>📏 Szerokość pokoju (m):
+        <input type="number" name="width" step="0.1" required />
+      </label>
+
+      <label>📐 Długość pokoju (m):
+        <input type="number" name="length" step="0.1" required />
+      </label>
+
+      <label>📏 Wysokość pokoju (m):
+        <input type="number" name="height" step="0.1" required />
+      </label>
+
+      <label>💰 Budżet (zł):
+        <input type="number" name="budget" required />
+      </label>
+
+      <label>🎨 Styl:
+        <select name="style" required>
+          <option value="nowoczesny">Nowoczesny</option>
+          <option value="skandynawski">Skandynawski</option>
+          <option value="industrialny">Industrialny</option>
+        </select>
+      </label>
+
+      <button type="submit">Wygeneruj aranżację</button>
+    </form>
+  </div>
+  
+  <script>
+    document.getElementById("roomForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+      localStorage.setItem("roomData", JSON.stringify(data));
+      window.location.href = "result.html";
+    });
+  </script>
+</body>
+</html>

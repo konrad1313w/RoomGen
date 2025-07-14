@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aranżacja Pokoju</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Wynik aranżacji</h1>
+    <div id="output">
+        <canvas id="bg"></canvas>
+    </div>
+  <div class="furniture-table">
+  <h2>Proponowane meble</h2>
+  <table>
+    <tr>
+      <td>
+        <img src="mebel1.png" alt="Mebel 1">
+        <br><a href="#" class="btn">Kup teraz</a>
+      </td>
+      <td>
+        <img src="mebel2.png" alt="Mebel 2">
+        <br><a href="#" class="btn">Kup teraz</a>
+      </td>
+      <td>
+        <img src="mebel3.png" alt="Mebel 3">
+        <br><a href="#" class="btn">Kup teraz</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+    <a href="index.html">⬅️ Powrót</a>
+  </div>
+<script type="importmap">
+    {
+      "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@v0.177.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+      }
+    }
+</script>
+<script type="module" src="scripts.js"></script>
+</body>
+</html>

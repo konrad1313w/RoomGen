@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.furniture-table {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.furniture-table h2 {
+  margin-bottom: 1rem;
+}
+
+.furniture-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.furniture-table td {
+  padding: 1rem;
+}
+
+.furniture-table img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.furniture-table .btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.furniture-table .btn:hover {
+  background-color: #1e7e34;
+}
