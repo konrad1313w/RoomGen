@@ -1,3 +1,6 @@
 [submodule "IDesign"]
 	path = IDesign
 	url = https://github.com/atcelen/IDesign.git
+[submodule "openshape-demo-support"]
+	path = openshape-demo-support
+	url = https://huggingface.co/OpenShape/openshape-demo-support
